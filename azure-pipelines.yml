@@ -7,8 +7,7 @@ trigger:
 - release
 
 variables:
-  rootDir: 'Blog-Top-Of-The-Stack'
-  buildDir: '$(rootDir)/build'
+  buildDir: '~/build'
 
 pool:
   vmImage: 'ubuntu-latest'
