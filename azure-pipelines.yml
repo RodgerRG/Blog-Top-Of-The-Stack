@@ -16,11 +16,6 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    npm install react-scripts@latest
-    displayName: 'Install React from NPM'
-
-
-- script: |
     npm install
     npm run build
   displayName: 'NPM build'
