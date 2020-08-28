@@ -7,7 +7,7 @@ trigger:
 - release
 
 variables:
-  buildDir: '~/build'
+  buildDir: 'build'
 
 pool:
   vmImage: 'ubuntu-latest'
