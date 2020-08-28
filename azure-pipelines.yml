@@ -19,10 +19,8 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    cd $(rootDir)
     npm ci
     npm run build
-    cd ..
   displayName: 'NPM build'
 
 - task: ArchiveFiles@2
