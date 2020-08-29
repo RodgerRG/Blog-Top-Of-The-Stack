@@ -1,48 +1,48 @@
 {
-  "name": "blog-top-of-the-stack",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "bootstrap": "4",
-    "jquery": "3",
-    "popper.js": "1",
-    "react": "16",
-    "react-bootstrap": "1",
-    "react-dom": "16",
-    "react-markdown": "4",
-    "react-scripts": "3",
-    "typescript": "4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@testing-library/jest-dom": "5",
-    "@testing-library/react": "10",
-    "@testing-library/user-event": "12",
-    "@types/jest": "26",
-    "@types/node": "14",
-    "@types/react": "16",
-    "@types/react-dom": "16",
-    "@types/react-bootstrap": "0",
-    "raw.macro": "^0.4.2"
-  }
+	"name": "blog-top-of-the-stack",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"bootstrap": "4",
+		"jquery": "3",
+		"popper.js": "1",
+		"react": "16",
+		"react-bootstrap": "1",
+		"react-dom": "16",
+		"react-markdown": "4",
+		"react-scripts": "3",
+		"typescript": "4"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"@testing-library/jest-dom": "5",
+		"@testing-library/react": "10",
+		"@testing-library/user-event": "12",
+		"@types/jest": "26",
+		"@types/node": "14",
+		"@types/react": "16",
+		"@types/react-dom": "16",
+		"@types/react-bootstrap": "0",
+		"raw.macro": "^0.4.2"
+	}
 }
