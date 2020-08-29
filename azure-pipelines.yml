@@ -7,7 +7,7 @@ trigger:
 - release
 
 variables:
-  buildDir: '~/build'
+  buildDir: 'build'
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -19,10 +19,8 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    cd $(rootDir)
     npm ci
     npm run build
-    cd ..
   displayName: 'NPM build'
 
 - task: ArchiveFiles@2
