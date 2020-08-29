@@ -5,16 +5,15 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
-const input = '# Test Header\n\n ## And a sub-header \n\n And a test paragraph\n\n And another paragraph';
+import raw from 'raw.macro';
 
-const App: React.FC = () => 
-  <Container>
+const App: React.FC = () => {
+  return <Container>
     <Row>
       <Button>Bootstrap Button</Button>
     </Row>
-    <Row>
-      <ReactMarkdown source={input} />
-    </Row>
+    <ReactMarkdown source={raw('./articles/test-article.md')} />
   </Container>;
+}
 
 export default App;
