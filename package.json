@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/react-redux": "^7.1.9",
     "bootstrap": "4",
     "jquery": "3",
     "popper.js": "1",
@@ -10,7 +11,10 @@
     "react-bootstrap": "1",
     "react-dom": "16",
     "react-markdown": "4",
-    "react-scripts": "3",
+    "react-redux": "^7.2.1",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.3",
     "typescript": "4"
   },
   "scripts": {
@@ -42,7 +46,8 @@
     "@types/node": "^14.6.2",
     "@types/react": "16",
     "@types/react-bootstrap": "0",
-    "@types/react-dom": "16",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-router": "^5.1.8",
     "raw.macro": "^0.4.2"
   }
 }
