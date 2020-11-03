@@ -1,0 +1,1 @@
+export const SELECTED_PROJECT = "SELECTED_PROJECT"
