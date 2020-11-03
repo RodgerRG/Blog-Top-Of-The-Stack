@@ -8,3 +8,5 @@ const SplashPage : React.FC = (props) => {
     </div>
   );
 }
+
+export default SplashPage;

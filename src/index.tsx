@@ -8,6 +8,7 @@ import rootReducer from './reducers/rootReducer';
 import Home from './components/HomePage';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import SplashPage from './components/SplashPage';
+import AboutPage from './components/AboutPage';
 
 const store = createStore(rootReducer);
 
@@ -23,10 +24,10 @@ ReactDOM.render(
           PlaceHolder
         </Route>
         <Route exact path="/archives">
-        PlaceHolder
+          PlaceHolder
         </Route>
         <Route exact path="/about">
-        PlaceHolder
+          <AboutPage />
         </Route>
       </Switch>
       </BrowserRouter>
