@@ -6,12 +6,30 @@ import TopNav from './components/TopNav';
 import { Provider } from 'react-redux';
 import rootReducer from './reducers/rootReducer';
 import Home from './components/HomePage';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import SplashPage from './components/SplashPage';
 
 const store = createStore(rootReducer);
 
 ReactDOM.render(
-  <Provider store={store}>
-    <Home />
-  </Provider>,
+    <Provider store = {store}>
+      <TopNav />
+      <BrowserRouter>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/projects">
+          PlaceHolder
+        </Route>
+        <Route exact path="/archives">
+        PlaceHolder
+        </Route>
+        <Route exact path="/about">
+        PlaceHolder
+        </Route>
+      </Switch>
+      </BrowserRouter>
+    </Provider>,
   document.getElementById('root')
 );
