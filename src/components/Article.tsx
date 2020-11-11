@@ -1,19 +1,18 @@
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
 
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
-import raw from 'raw.macro';
+import { Article as ArticleData } from '../types';
 
-const Home: React.FC = () => {
+const Article: React.FC<{ article: ArticleData }> = ({ article }) => {
   return <Container>
     <Row>
       <Button>Bootstrap Button</Button>
     </Row>
-    <ReactMarkdown source={raw('./articles/test-article.md')} />
+    { article.content }
   </Container>;
 }
 
-export default Home;
+export default Article;
