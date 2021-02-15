@@ -1,9 +1,6 @@
 import React from 'react';
 
-import { Provider } from 'react-redux';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-
-import store from './redux/store';
 
 import AboutPage from './components/AboutPage';
 import TopNav from './components/TopNav';
@@ -13,7 +10,7 @@ import Article from './components/Article';
 import articles from './articles/Articles'
 
 const App: React.FC = () => {
-  return <Provider store = {store}>
+  return <>
     <TopNav />
     <BrowserRouter>
       <Switch>
@@ -38,7 +35,7 @@ const App: React.FC = () => {
         }
       </Switch>
     </BrowserRouter>
-  </Provider>;
+  </>;
 }
 
 export default App;
