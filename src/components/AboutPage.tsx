@@ -6,7 +6,7 @@ import raw from "raw.macro";
 
 const AboutPage : React.FC = (props) => {
     return <Container>
-        <ReactMarkdown source={raw('../articles/Miscellaneous/about-us.md')} />
+      <ReactMarkdown source={raw('../articles/Miscellaneous/about-us.md')} />
     </Container>
 }
 
