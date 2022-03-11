@@ -2,7 +2,7 @@ import { Container } from '@mui/material';
 import React from 'react';
 
 interface ContentWrapperProps {
-    children: React.ReactNode[];
+    children: React.ReactNode[] | React.ReactNode;
 }
 
 const ContentWrapper = (props : ContentWrapperProps) => {
