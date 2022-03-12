@@ -1,27 +1,26 @@
-import { ListItem, ListItemIcon, ListItemText } from "@mui/material";
-import { RouteComponentProps } from "./RouteComponent";
+import { ListItem, ListItemButton, ListItemIcon, ListItemText, useTheme } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
-interface NavComponentProps extends RouteComponentProps {
-    icon: any;
-    itemName: string;
+interface NavComponentProps {
+  icon: any;
+  itemName: string;
+  path: string;
 }
 
 const NavComponent = (props: NavComponentProps) => {
-    const handleNav = () => {
-        
-    }
-    
-    return <ListItem onClick={handleNav}>
-        <ListItemIcon>
+  let navigate = useNavigate();
+  let theme = useTheme();
 
-        </ListItemIcon>
-        <ListItemText>
-
-        </ListItemText>
+  return (
+    <ListItem sx={{px: theme.spacing(0)}}>
+      <ListItemButton sx={{px: theme.spacing(4)}}
+      onClick={() => navigate(props.path)}>
+        <ListItemIcon>{props.icon}</ListItemIcon>
+        <ListItemText>{props.itemName}</ListItemText>
+      </ListItemButton>
     </ListItem>
-
-
-}
+  );
+};
 
 export { NavComponent };
 export type { NavComponentProps };
